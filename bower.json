@@ -1,0 +1,22 @@
+{
+  "name": "workflow",
+  "description": "My best workflow",
+  "main": "index.js",
+  "authors": [
+    "Alexandr Domashev"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "susy": "2.2.5",
+    "sass-hidpi": "^2.0.0"
+  }
+}

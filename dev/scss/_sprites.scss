@@ -1,0 +1,228 @@
+// SCSS variables are information about icon's compiled state, stored under its original file name
+//
+// .icon-home {
+//   width: $icon-home-width;
+// }
+//
+// The large array-like variables contain all information about a single icon
+// $icon-home: x y offset_x offset_y width height total_width total_height image_path;
+//
+// At the bottom of this section, we provide information about the spritesheet itself
+// $spritesheet: width height image $spritesheet-sprites;
+$email-name: 'email';
+$email-x: 0;
+$email-y: 0;
+$email-offset-x: 0;
+$email-offset-y: 0;
+$email-width: 28px;
+$email-height: 28px;
+$email-total-width: 56px;
+$email-total-height: 56px;
+$email-image: '../images/sprites.png';
+$email: (0, 0, 0, 0, 28px, 28px, 56px, 56px, '../images/sprites.png', 'email', );
+$facebook-name: 'facebook';
+$facebook-x: 0;
+$facebook-y: 28px;
+$facebook-offset-x: 0;
+$facebook-offset-y: -28px;
+$facebook-width: 27px;
+$facebook-height: 28px;
+$facebook-total-width: 56px;
+$facebook-total-height: 56px;
+$facebook-image: '../images/sprites.png';
+$facebook: (0, 28px, 0, -28px, 27px, 28px, 56px, 56px, '../images/sprites.png', 'facebook', );
+$teamviewer-name: 'teamviewer';
+$teamviewer-x: 28px;
+$teamviewer-y: 0;
+$teamviewer-offset-x: -28px;
+$teamviewer-offset-y: 0;
+$teamviewer-width: 28px;
+$teamviewer-height: 28px;
+$teamviewer-total-width: 56px;
+$teamviewer-total-height: 56px;
+$teamviewer-image: '../images/sprites.png';
+$teamviewer: (28px, 0, -28px, 0, 28px, 28px, 56px, 56px, '../images/sprites.png', 'teamviewer', );
+$twitter-name: 'twitter';
+$twitter-x: 27px;
+$twitter-y: 28px;
+$twitter-offset-x: -27px;
+$twitter-offset-y: -28px;
+$twitter-width: 27px;
+$twitter-height: 28px;
+$twitter-total-width: 56px;
+$twitter-total-height: 56px;
+$twitter-image: '../images/sprites.png';
+$twitter: (27px, 28px, -27px, -28px, 27px, 28px, 56px, 56px, '../images/sprites.png', 'twitter', );
+$email-2x-name: 'email@2x';
+$email-2x-x: 0;
+$email-2x-y: 0;
+$email-2x-offset-x: 0;
+$email-2x-offset-y: 0;
+$email-2x-width: 56px;
+$email-2x-height: 56px;
+$email-2x-total-width: 112px;
+$email-2x-total-height: 112px;
+$email-2x-image: '../images/sprites@2x.png';
+$email-2x: (0, 0, 0, 0, 56px, 56px, 112px, 112px, '../images/sprites@2x.png', 'email@2x', );
+$facebook-2x-name: 'facebook@2x';
+$facebook-2x-x: 0;
+$facebook-2x-y: 56px;
+$facebook-2x-offset-x: 0;
+$facebook-2x-offset-y: -56px;
+$facebook-2x-width: 54px;
+$facebook-2x-height: 56px;
+$facebook-2x-total-width: 112px;
+$facebook-2x-total-height: 112px;
+$facebook-2x-image: '../images/sprites@2x.png';
+$facebook-2x: (0, 56px, 0, -56px, 54px, 56px, 112px, 112px, '../images/sprites@2x.png', 'facebook@2x', );
+$teamviewer-2x-name: 'teamviewer@2x';
+$teamviewer-2x-x: 56px;
+$teamviewer-2x-y: 0;
+$teamviewer-2x-offset-x: -56px;
+$teamviewer-2x-offset-y: 0;
+$teamviewer-2x-width: 56px;
+$teamviewer-2x-height: 56px;
+$teamviewer-2x-total-width: 112px;
+$teamviewer-2x-total-height: 112px;
+$teamviewer-2x-image: '../images/sprites@2x.png';
+$teamviewer-2x: (56px, 0, -56px, 0, 56px, 56px, 112px, 112px, '../images/sprites@2x.png', 'teamviewer@2x', );
+$twitter-2x-name: 'twitter@2x';
+$twitter-2x-x: 54px;
+$twitter-2x-y: 56px;
+$twitter-2x-offset-x: -54px;
+$twitter-2x-offset-y: -56px;
+$twitter-2x-width: 54px;
+$twitter-2x-height: 56px;
+$twitter-2x-total-width: 112px;
+$twitter-2x-total-height: 112px;
+$twitter-2x-image: '../images/sprites@2x.png';
+$twitter-2x: (54px, 56px, -54px, -56px, 54px, 56px, 112px, 112px, '../images/sprites@2x.png', 'twitter@2x', );
+$spritesheet-width: 56px;
+$spritesheet-height: 56px;
+$spritesheet-image: '../images/sprites.png';
+$spritesheet-sprites: ($email, $facebook, $teamviewer, $twitter,);
+$spritesheet: (56px, 56px, '../images/sprites.png', $spritesheet-sprites, );
+$retina-spritesheet-width: 112px;
+$retina-spritesheet-height: 112px;
+$retina-spritesheet-image: '../images/sprites@2x.png';
+$retina-spritesheet-sprites: ($email-2x, $facebook-2x, $teamviewer-2x, $twitter-2x, );
+$retina-spritesheet: (112px, 112px, '../images/sprites@2x.png', $retina-spritesheet-sprites, );
+
+// These "retina group" variables are mappings for the naming and pairing of normal and retina sprites.
+//
+// The list formatted variables are intended for mixins like `retina-sprite` and `retina-sprites`.
+$email-group-name: 'email';
+$email-group: ('email', $email, $email-2x, );
+$facebook-group-name: 'facebook';
+$facebook-group: ('facebook', $facebook, $facebook-2x, );
+$teamviewer-group-name: 'teamviewer';
+$teamviewer-group: ('teamviewer', $teamviewer, $teamviewer-2x, );
+$twitter-group-name: 'twitter';
+$twitter-group: ('twitter', $twitter, $twitter-2x,);
+$retina-groups: ($email-group, $facebook-group, $teamviewer-group, $twitter-group, );
+
+// The provided mixins are intended to be used with the array-like variables
+//
+// .icon-home {
+//   @include sprite-width($icon-home);
+// }
+//
+// .icon-email {
+//   @include sprite($icon-email);
+// }
+//
+// Example usage in HTML:
+//
+// `display: block` sprite:
+// <div class="icon-home"></div>
+//
+// To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+//
+// // CSS
+// .icon {
+//   display: inline-block;
+// }
+//
+// // HTML
+// <i class="icon icon-home"></i>
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+// The `retina-sprite` mixin sets up rules and a media query for a sprite/retina sprite.
+//   It should be used with a "retina group" variable.
+//
+// The media query is from CSS Tricks: https://css-tricks.com/snippets/css/retina-display-media-query/
+//
+// $icon-home-group: ('icon-home', $icon-home, $icon-home-2x, );
+//
+// .icon-home {
+//   @include retina-sprite($icon-home-group);
+// }
+@mixin sprite-background-size($sprite) {
+  $sprite-total-width: nth($sprite, 7);
+  $sprite-total-height: nth($sprite, 8);
+  background-size: $sprite-total-width $sprite-total-height;
+}
+
+@mixin retina-sprite($retina-group) {
+  $normal-sprite: nth($retina-group, 2);
+  $retina-sprite: nth($retina-group, 3);
+  @include sprite($normal-sprite);
+
+  @media (-webkit-min-device-pixel-ratio: 2),
+         (min-resolution: 192dpi) {
+    @include sprite-image($retina-sprite);
+    @include sprite-background-size($normal-sprite);
+  }
+}
+
+// The `sprites` mixin generates identical output to the CSS template
+//   but can be overridden inside of SCSS
+//
+// @include sprites($spritesheet-sprites);
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}
+
+// The `retina-sprites` mixin generates a CSS rule and media query for retina groups
+//   This yields the same output as CSS retina template but can be overridden in SCSS
+//
+// @include retina-sprites($retina-groups);
+@mixin retina-sprites($retina-groups) {
+  @each $retina-group in $retina-groups {
+    $sprite-name: nth($retina-group, 1);
+
+    .#{$sprite-name} {
+      @include retina-sprite($retina-group);
+    }
+  }
+}
